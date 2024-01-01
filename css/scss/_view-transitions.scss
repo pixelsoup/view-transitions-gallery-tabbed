@@ -1,0 +1,31 @@
+/* View Transitions CSS */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
+
+/* Simple final style */
+
+::view-transition-old(figcaption),
+::view-transition-new(figcaption) {
+  height: 100%;
+}
+
+/* Alternative custom animation style */
+
+// ::view-transition-old(figcaption),
+// ::view-transition-new(figcaption) {
+//   right: 0;
+//   left: auto;
+//   transform-origin: right center;
+//   height: 100%;
+// }
+//
+// ::view-transition-old(figcaption) {
+//   animation: 0.25s linear both shrink-x;
+// }
+//
+// ::view-transition-new(figcaption) {
+//   animation: 0.25s 0.25s linear both grow-x;
+// }

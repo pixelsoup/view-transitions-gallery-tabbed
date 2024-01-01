@@ -1,0 +1,38 @@
+.thumbsWrapper {
+  display: flex;
+  order: 2;
+  margin-top: 10px;
+
+  @media (min-width: 700px) {
+    order: 0;
+    flex-direction: column;
+    margin: 0 10px 0 0;
+  }
+}
+
+.thumbImage {
+  display: block;
+  border-radius: 7px;
+  opacity: 0.7;
+}
+
+.thumbLink {
+  outline: 0;
+
+  +.thumbLink {
+    margin-left: 10px;
+
+    @media (min-width: 700px) {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+.thumbLink:hover .thumbImage,
+.thumbLink:focus .thumbImage {
+  opacity: 1;
+}
+
+.thumbImage:first-child {
+  margin-top: 0;
+}
